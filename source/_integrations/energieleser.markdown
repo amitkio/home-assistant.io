@@ -1,12 +1,13 @@
 ---
-title: Energieleser
-description: Instructions on how to integrate Energieleser devices within Home Assistant.
+title: energieleser
+description: Instructions on how to integrate energieleser devices within Home Assistant.
 ha_release: 2026.6
 ha_category:
   - Energy
   - Sensor
 ha_codeowners:
   - '@AjinkyaGokhale'
+  - '@amitkio'
 ha_quality_scale: bronze
 ha_domain: energieleser
 ha_integration_type: device
@@ -17,9 +18,9 @@ ha_platforms:
   - sensor
 ---
 
-The Energieleser {% term integration %} fetches real-time energy data from your Energieleser devices, such as Stromleser, Gasleser, Wasserleser, and Wärmeleser, using a local HTTP API.
+The energieleser {% term integration %} fetches real-time energy data from your energieleser devices, such as stromleser, gasleser, wasserleser, and wärmeleser, using a local HTTP API.
 
-Energieleser is manufactured by nineti GmbH, a German company that provides smart readers for various utility meters.
+energieleser is a product line by [nineti GmbH](https://stromleser.de), a German company offering smart readers for utility meters.
 
 {% include integrations/config_flow.md %}
 
@@ -27,7 +28,7 @@ Energieleser is manufactured by nineti GmbH, a German company that provides smar
 
 {% configuration_basic %}
 Host:
-  description: The IP address of your Energieleser device.
+  description: "The IP address or hostname of your energieleser device. For example, `192.168.1.42`."
 {% endconfiguration_basic %}
 
 ## Data updates
